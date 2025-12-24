@@ -8,10 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?php echo "Home";?> </title>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,15 +35,15 @@
                     </ul>
                 </div>
 
-                <ul class="navbar-nav d-flex flex-row gap-3 order-3" id="nav-icons">
+                <ul class="navbar-nav d-flex flex-row gap-3 order-3 justify-content-center align-items-center" id="nav-icons">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sign in" aria-label="Sign in">
-                            <i class="bi bi-person"></i>
+                        <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart" aria-label="Cart">
+                            <i class="bi bi-cart2"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart" aria-label="Cart">
-                            <i class="bi bi-cart"></i>
+                        <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Sign in" aria-label="Sign in">
+                            <i class="bi bi-person"></i>
                         </a>
                     </li>
                 </ul>
@@ -55,7 +58,7 @@
         </script>
     </header>
     <section>
-        
+
     </section>
 </body>
 </html>
