@@ -1,5 +1,5 @@
 <?php
-// Shared header include: navbar + tooltip init
+
 ?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light shadow px-lg-5" id="navbar">
