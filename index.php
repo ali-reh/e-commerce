@@ -8,17 +8,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?php echo "Home";?> </title>
-    <link rel="stylesheet" href="style/navbar.css">
+    <!-- Header (navbar + hero) combined CSS -->
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/hero.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Project split CSS: base, buttons, featured -->
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/buttons.css">
+    <link rel="stylesheet" href="style/featured.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light shadow px-lg-5 fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light shadow px-lg-5" id="navbar">
             <div class="container d-flex flex-row align-items-center justify-content-between">
                 <a href="index.php" class="brand navbar-brand order-2 order-lg-1">
                     BRAND
@@ -47,7 +53,6 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
         </nav>
         <script>
@@ -57,7 +62,33 @@
         });
         </script>
     </header>
-    <section>
+    <section class="hero-section py-5 py-md-6 d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="hero-content mx-auto d-flex flex-column align-items-start">
+                <h1 class="hero-title luxury-font">
+                    Thoughtful design for
+                    <br>
+                    <span class="primary-color-text luxury-font"> everyday life</span>
+                </h1>
+
+                <p class="hero-text mt-4 primary-font">
+                    Curated essentials that bring beauty and function to your daily rituals.
+                    Quality craftsmanship, timeless style.
+                </p>
+
+                <div class="mt-4 d-flex flex-column flex-sm-row gap-3 primary-font" >
+                    <a href="shop.php" class="btn primary-color-btn btn-lg primary-font" id="hero-buttons">
+                        Shop Collection
+                    </a>
+
+                    <a href="shop.php" class="btn secondary-color-btn btn-lg primary-font" id="hero-buttons">
+                        Explore Clothing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="featured-items">
 
     </section>
 </body>
